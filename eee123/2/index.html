@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EEEpen </title>
+    <link rel="icon" href="/about/icon.png">
+
+    <script>
+        function check(input, key) {
+            if (input.value == key)
+                input.classList.add("correct");
+            else
+                input.classList.remove("correct");
+        }
+    </script>
+
+    <style>
+
+        @font-face {
+            font-family: "arial_rounded";
+            src: url("/about/arial_rounded.ttf");
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFE97F;
+        }
+
+        a:hover {
+            color: #FFD800;
+        }
+
+        body {
+            font-family: "arial_rounded", sans-serif;
+            font-size: clamp(20px, 5vw, 40px);
+            background-color: #000000;
+            color: #FFFFFF;
+            margin: 20px;
+        }
+
+        img {
+            width: clamp(200px, 80vw, 800px);
+        }
+
+        input {
+            font-family: "arial_rounded", sans-serif;
+            font-size: clamp(20px, 5vw, 40px);
+            background-color: #000000;
+            color: #FFFFFF;
+            border: 5px solid #808080;
+            width: 140px;
+        }
+
+        .correct {
+            border-color: #00FF21;
+        }
+
+        .stack {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="stack">
+
+    <a href="../"> < back </a>
+    <div> 2 Circuit Analysis Techniques </div>
+
+    <img src="q0_67_69.png">
+    <div></div>  <div></div>
+
+    <img src="q1_71.png">
+    <div> R<sub>eq</sub> = <input oninput="check(this, 2.4);"> &Omega; </div>
+    <div></div>  <div></div>
+
+    <img src="q2_72.png">
+    <div> R<sub>ab</sub> = <input oninput="check(this, 19);"> &Omega; </div>
+    <div></div>  <div></div>
+
+    <img src="q3_73.png">
+    <div> G<sub>eq</sub> = <input oninput="check(this, 4);"> S </div>
+    <div></div>  <div></div>
+
+    <img src="q4_74.png">
+    <div> v<sub>o</sub> = <input oninput="check(this, 4);"> V </div>
+    <div></div>  <div></div>
+
+    <img src="q5_75.png">
+    <div> i<sub>1</sub> = <input oninput="check(this, 20);"> mA </div>
+    <div></div>  <div></div>
+
+    <img src="q6_81.png">
+    <div> R<sub>ab</sub> = <input oninput="check(this, 40)";> &Omega; </div>
+    <div></div>  <div></div>
+
+</div>
+</body>
+</html>

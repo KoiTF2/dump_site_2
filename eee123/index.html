@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EEEpen eee123 </title>
+    <link rel="icon" href="/about/icon.png">
+
+    <style>
+
+        @font-face {
+            font-family: "arial_rounded";
+            src: url("/about/arial_rounded.ttf");
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFE97F;
+        }
+
+        a:hover {
+            color: #FFD800;
+        }
+
+        body {
+            font-family: "arial_rounded", sans-serif;
+            font-size: clamp(20px, 5vw, 40px);
+            background-color: #000000;
+            color: #FFFFFF;
+            margin: 20px;
+        }
+
+        .stack {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .table {
+            display: grid;
+            grid-template-columns: max-content max-content;
+            gap: 20px;
+        }
+
+        .table > div:nth-child(2n + 1) {
+            margin-left: 60px;
+            text-align: right;
+        }
+
+        .top {
+            display: flex;
+            gap: 120px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="stack">
+
+        <div class="top">
+            <a href="../"> < back </a>
+            <span style="color: #FF006E;"> EEE 123 </span>
+        </div>
+
+        <div> Unit 1 </div>
+        <div class="table">
+            <div> 1a </div>  <div><a href="1a"> Basic Circuit Laws (part 1) </a></div>
+            <div> 1b </div>  <div><a href="1b"> Basic Circuit Laws (part 2) </a></div>
+            <div> 2 </div>  <div><a href="2"> Circuit Analysis Techniques </a></div>
+            <div> 3 </div>  <div><a href="3"> Nodal Analysis </a></div>
+            <div> 4 </div>  <div><a href="4"> The Superposition Principle </a></div>
+            <div> 5 </div>  <div><a href="5"> Thevenin’s Theorem </a></div>
+        </div>
+
+        <div> Unit 2 </div>
+        <div class="table">
+            <div> 6 </div>  <div><a href="6"> Diodes </a></div>
+            <div> 7 </div>  <div><a href="7"> Bipolar Junction Transistors </a></div>
+            <div> 8 </div>  <div><a href="8"> Metal-Oxide-Semiconductor Field-Effect Transistors </a></div>
+            <div> 9 </div>  <div><a href="9"> Logic Circuits </a></div>
+            <div> 10 </div>  <div><a href="10"> The Operational Amplifier </a></div>
+        </div>
+        
+        <div> Unit 3 </div>
+        <div class="table">
+            <div> 11 </div>  <div><a href="11"> Capacitors and Inductors, Phasors </a></div>
+            <div> 12 </div>  <div><a href="12"> Steady-state AC Circuit Analysis using Phasors </a></div>
+            <div> 13 </div>  <div><a href="13"> Power Computation in AC Circuits  </a></div>
+            <div> 14 </div>  <div><a href="14"> Transformers </a></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

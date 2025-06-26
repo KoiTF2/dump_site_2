@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EEEpen math40 </title>
+    <link rel="icon" href="/about/icon.png">
+
+    <style>
+
+        @font-face {
+            font-family: "arial_rounded";
+            src: url("/about/arial_rounded.ttf");
+        }
+
+        a {
+            text-decoration: none;
+            color: #7FFF8E;
+        }
+
+        a:hover {
+            color: #00FF21;
+        }
+
+        body {
+            font-family: "arial_rounded", sans-serif;
+            font-size: clamp(20px, 5vw, 40px);
+            background-color: #000000;
+            color: #FFFFFF;
+            margin: 20px;
+        }
+
+        .stack {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .table {
+            display: grid;
+            grid-template-columns: max-content max-content;
+            gap: 20px;
+        }
+
+        .table > div:nth-child(2n + 1) {
+            margin-left: 60px;
+            text-align: right;
+        }
+
+        .top {
+            display: flex;
+            gap: 120px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="stack">
+
+        <div class="top">
+            <a href="../"> < back </a>
+            <span style="color: #FFFF00;"> Math 40 </span>
+        </div>
+
+        <div> Unit 1 </div>
+        <div class="table">
+            <div> 1.1 </div>  <div><a href="1.1"> Matrices (part 1) </a></div>
+            <div> 1.2 </div>  <div><a href="1.2"> Matrices (part 2) </a></div>
+            <div>  2  </div>  <div><a href="2"> Solutions of SLE </a></div>
+            <div>  3  </div>  <div><a href="3"> Nonsingular Matrices </a></div>
+            <div>  4  </div>  <div><a href="4"> Determinants </a></div>
+        </div>
+
+        <div> Unit 2 </div>
+        <div class="table">
+            <div>  5  </div>  <div><a href="5"> Vector Spaces and Subspaces </a></div>
+            <div>  6  </div>  <div><a href="6"> Spanning Sets and Linear Independence </a></div>
+            <div> 7.1 </div>  <div><a href="7.1"> Basis Dimension and Rank </a></div>
+            <div> 7.2 </div>  <div><a href="7.2"> Row and Column Spaces, Nullspaces </a></div>
+            <div>  8  </div>  <div><a href="8"> Inner Product Spaces </a></div>
+            <div>  9  </div>  <div><a href="9"> Orthonormal Bases and G-S Process </a></div>
+        </div>
+
+        <div> Unit 3 </div>
+        <div class="table">
+            <div> 10.1 </div>  <div><a href="10.1"> Coordinate Vectors and Transition Matrices </a></div>
+            <div> 11.1 </div>  <div><a href="11.1"> Linear Transformations </a></div>
+            <div> 11.2 </div>  <div><a href="11.2"> Kernel and Range of a LT </a></div>
+            <div>  12  </div>  <div><a href="12">  Matrix of a LT and Similarity </a></div>
+            <div>  13  </div>  <div><a href="13"> Eigenvalues and Eigenvectors </a></div>
+            <div>  14  </div>  <div><a href="14"> Orthogonal Diagonalization </a></div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

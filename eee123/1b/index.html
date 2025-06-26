@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EEEpen </title>
+    <link rel="icon" href="/about/icon.png">
+
+    <script>
+        function check(input, key) {
+            if (input.value == key)
+                input.classList.add("correct");
+            else
+                input.classList.remove("correct");
+        }
+    </script>
+
+    <style>
+
+        @font-face {
+            font-family: "arial_rounded";
+            src: url("/about/arial_rounded.ttf");
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFE97F;
+        }
+
+        a:hover {
+            color: #FFD800;
+        }
+
+        body {
+            font-family: "arial_rounded", sans-serif;
+            font-size: clamp(20px, 5vw, 40px);
+            background-color: #000000;
+            color: #FFFFFF;
+            margin: 20px;
+        }
+
+        img {
+            width: clamp(200px, 80vw, 800px);
+        }
+
+        input {
+            font-family: "arial_rounded", sans-serif;
+            font-size: clamp(20px, 5vw, 40px);
+            background-color: #000000;
+            color: #FFFFFF;
+            border: 5px solid #808080;
+            width: 140px;
+        }
+
+        .correct {
+            border-color: #00FF21;
+        }
+
+        .stack {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .table {
+            display: grid;
+            grid-template-columns: max-content max-content;
+            gap: 20px;
+            text-align: right;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="stack">
+
+        <a href="../"> < back </a>
+        <div> 1b Basic Circuit Laws (part 2) </div>
+
+        <img src="q0_54.png">
+        <div></div>  <div></div>
+
+        <img src="q1_64.png">
+        <div class="table">
+            <div>             i = </div>  <div> <input oninput="check(this, -8)"> A </div>
+            <div> v<sub>o</sub> = </div>  <div> <input oninput="check(this, 48)"> V</div>
+        </div>
+        <div></div>  <div></div>
+
+        <img src="q2_64.png">
+        <div class="table">
+            <div> v<sub>x</sub> = </div>  <div> <input oninput="check(this, 20)"> V</div>
+            <div> v<sub>o</sub> = </div>  <div> <input oninput="check(this, -10)"> V</div>
+        </div>
+        <div></div>  <div></div>
+
+        <img src="q3_65.png">
+        <div class="table">
+            <div> v<sub>o</sub> = </div>  <div> <input oninput="check(this, 24)"> V</div>
+            <div> i<sub>o</sub> = </div>  <div> <input oninput="check(this, 6)"> A</div>
+        </div>
+        <div></div>  <div></div>
+
+        <img src="q4_65.png">
+        <div class="table">
+            <div> v<sub>o</sub> = </div>  <div> <input oninput="check(this, 12)"> V</div>
+            <div> i<sub>o</sub> = </div>  <div> <input oninput="check(this, 6)"> A</div>
+        </div>
+        <div></div>  <div></div>
+
+        <img src="q5_65.png">
+        <div class="table">
+            <div> v<sub>1</sub> = </div>  <div> <input oninput="check(this, 24)"> V</div>
+            <div> i<sub>2</sub> = </div>  <div> <input oninput="check(this, 2)"> A</div>
+            <div> v<sub>3</sub> = </div>  <div> <input oninput="check(this, 6)"> V</div>
+        </div>
+        <div></div>  <div></div>
+
+        <img src="q6_66.png">
+        <div class="table">
+            <div> i<sub>1</sub> = </div>  <div> <input oninput="check(this, 3)"> A</div>
+            <div> v<sub>2</sub> = </div>  <div> <input oninput="check(this, 4)"> V</div>
+            <div> i<sub>3</sub> = </div>  <div> <input oninput="check(this, 1.25)"> A</div>
+        </div>
+        <div></div>  <div></div>
+
+    </div>
+
+</body>
+</html>

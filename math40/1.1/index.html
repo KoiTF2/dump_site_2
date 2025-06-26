@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EEEpen </title>
+    <link rel="icon" href="/about/icon.png">
+
+    <script>
+        function check(input, key) {
+            if (input.value == key)
+                input.classList.add("correct");
+            else
+                input.classList.remove("correct");
+        }
+    </script>
+
+    <style>
+
+        @font-face {
+            font-family: "arial_rounded";
+            src: url("/about/arial_rounded.ttf");
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFE97F;
+        }
+
+        a:hover {
+            color: #FFD800;
+        }
+
+        body {
+            font-family: "arial_rounded", sans-serif;
+            font-size: clamp(20px, 5vw, 40px);  /* make 4vw? */
+            background-color: #000000;
+            color: #FFFFFF;
+            margin: 20px;
+        }
+
+        img {
+            width: clamp(200px, 80vw, 800px);
+        }
+
+        input {
+            font-family: "arial_rounded", sans-serif;
+            font-size: clamp(20px, 5vw, 40px);
+            background-color: #000000;
+            color: #FFFFFF;
+            border: 5px solid #808080;
+            width: 80px;
+        }
+
+        .correct {
+            border-color: #00FF21;
+        }
+
+        .stack {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .table {
+            display: grid;
+            grid-template-columns: max-content max-content max-content;
+            gap: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="stack">
+
+        <div><a href="../"> < back </a></div>
+        <div> 1.1 Matrices (part 1) </div>
+
+        <img src = "q1.png">
+        <div> x = <input oninput="check(this, 6)"> </div>
+        <div> y = <input oninput="check(this, 9)"> </div>
+        <div></div> <div></div>
+        
+        <img src="q2.png">
+        <div> RREF: </div>
+        <div> a = <input oninput="check(this, 3)"> </div>
+        <div> b = <input oninput="check(this, 2)"> </div>
+        <div></div> <div></div>
+
+        <img src="q3.png">
+        <div> x = <input oninput="check(this, 8)"> </div>
+        <div></div> <div></div>
+
+        <img src="q4.png">
+        <div> AB = </div>
+        <div class="table">
+            <input oninput="check(this, 3)"> <input oninput="check(this, 2)"> <div></div>
+            <input oninput="check(this, 3)"> <input oninput="check(this, 7)">
+        </div>
+        <div></div>
+        <div> BA = </div>
+        <div class="table">
+            <input oninput="check(this, 7)"> <input oninput="check(this, 2)"> <input oninput="check(this, 2)">
+            <input oninput="check(this, 3)"> <input oninput="check(this, 1)"> <input oninput="check(this, 0)">
+            <input oninput="check(this, 1)"> <input oninput="check(this, 0)"> <input oninput="check(this, 2)">
+        </div>
+        <div></div> <div></div>
+
+        <div> yes or no </div>
+        <div> AB = BA? <input oninput="check(this, 'no')"> </div>
+        <div> order matters? <input oninput="check(this, 'yes')"> </div>
+
+    </div>
+
+</body>
+</html>
